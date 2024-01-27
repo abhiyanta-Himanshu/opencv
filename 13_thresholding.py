@@ -10,9 +10,12 @@ cv.imshow('gray',gray)
 # simple thresholding
 threshold , thresh = cv.threshold(gray,100,255,cv.THRESH_BINARY)
 cv.imshow('simple Threshold', thresh)
+# Simple threshold take two value and convert these range to black
+
 
 # Adaptive threshold
 adaptive_thresh = cv.adaptiveThreshold(gray,255,cv.ADAPTIVE_THRESH_MEAN_C,cv.THRESH_BINARY,11,3)
 cv.imshow('adaptive thresh',adaptive_thresh)
+# adaptive thrshold take a mean and subtract it from value
 
 cv.waitKey(0)
