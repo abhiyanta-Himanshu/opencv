@@ -9,8 +9,10 @@ cv.imshow('gray',gray)
 
 # simple thresholding
 threshold , thresh = cv.threshold(gray,100,255,cv.THRESH_BINARY)
+# thresh --> threshloded image
+# threshold --> (100) thresholded value u pass
 cv.imshow('simple Threshold', thresh)
-# Simple threshold take two value and convert these range to black
+# Simple threshold take two value and convert these range to black (100,255)
 
 
 # Adaptive threshold
